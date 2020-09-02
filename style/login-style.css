@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row-top{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    box-shadow:0 0 7px 1px black;
+
+}
+.column-top{
+    position: absolute;
+    top: 30px;
+    left: 60%;
+    transform: translateX(-20%) translateY(5px);
+
+}
+li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    color: darkcyan;
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 23px;
+    padding: 0 20px;
+}
+.navigation::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: cadetblue;
+    transition: width .3s
+}
+.navigation:hover::after{
+    width: 100%;
+    transition: width .3s
+}
+.img{
+    width: 80px;
+    height: 85px;
+    padding-left: 130px;
+    padding-top: 8px;
+}
+
+.image{
+    width: 50%;
+    height: 555px;
+    float: left;
+    margin-top: 10px;
+
+}
+.column-right{
+    float: right;
+    width: 48%;
+    height: 555px;
+
+}
+.image img{
+    width: 100%;
+    height: 555px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.column-right .welcome-img{
+    width: 100px;
+    height: 107px;
+    padding-top: 66px;
+    padding-left: 319px;
+}
+.column-right .msg{
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 9px;
+    padding-left: 322px;
+    color: crimson;
+}
+.login{
+    padding-top: 30px;
+    padding-left: 230px;
+}
+.login span{
+    font-size: 20px;
+}
+.input[type="email"],[type="password"]{
+    width: 70%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    display: inline-block;
+}
+.login p{
+    display: inline-block;
+}
+.login .fa{
+    display: flex;
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.login-btn{
+    width: 72%;
+    display: block;
+    padding: 10px 30px;
+    border: 0;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius: 30px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    margin-left: 17px;
+
+}
+.login-btn:hover{
+    cursor: pointer;
+    background: linear-gradient(to left,#ff105f,#ffad06);
+}
+
+.forgot-pass{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 106px;
+    text-decoration: none;
+
+}
+.info{
+    top: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.new{
+    display: inline-block;
+    margin-left: 54px;
+    margin-top: auto;
+}
+.create-account{
+    display: inline-block;
+    font-size: 17px;
+    margin-outside: none;
+    margin-top: auto;
+    color: #1b8c53;
+    margin-bottom: 15px;
+}
+.create-account:hover{
+    cursor: pointer;
+    color: darkred;
+}

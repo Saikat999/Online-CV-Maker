@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row-top{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: 2px groove lightslategrey;
+
+}
+.column-top{
+    position: absolute;
+    top: 30px;
+    left: 60%;
+    transform: translateX(-20%) translateY(5px);
+
+}
+li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    color: darkcyan;
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 23px;
+    padding: 0 20px;
+}
+.navigation::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: cadetblue;
+    transition: width .3s
+}
+.navigation:hover::after{
+    width: 100%;
+    transition: width .3s
+}
+.img{
+    width: 80px;
+    height: 85px;
+    padding-left: 130px;
+    padding-top: 8px;
+}
+
+/* Welcome section */
+.welcome {
+    width: 100%;
+    height: 343px;
+    padding-top: 180px;
+    padding-right: 0;
+    text-align: right;
+    background-image: linear-gradient(rgba(0,0,0,0.80), rgba(0, 0, 0, 0.80)), url("../image/pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.welcome h1{
+    font-size: 40px;
+    color: white;
+    padding-right: 50px;
+
+}
+.welcome p{
+    padding-top: 5px;
+    font-size: 15px;
+    font-style: oblique;
+    color: white;
+    padding-right: 106px;
+
+}
+.build li a{
+    text-decoration: none;
+    color: darkturquoise;
+    padding: 5px 20px;
+    border: 4px solid darkturquoise ;
+}
+.build{
+    padding-top: 20px;
+    padding-right: 250px;
+}
+
+/* footer section */
+
+.footer{
+    width: 100%;
+    height: 37vh;
+    background: darkcyan;
+    display: flex;
+}
+.footer-left{
+    float: left;
+    padding-top: 10px;
+}
+.footer-left h3{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 110px;
+    padding: 9px 36px 16px;
+    margin-left: 90px;
+    border-bottom: 1px dotted black;
+}
+.footer-left li{
+    color: white;
+    display: block;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 10px 113px;
+}
+.footer-left li a{
+    color: white;
+}
+.footer-left .contact{
+    font-size: 18px;
+}
+.footer-left .contact::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: cadetblue;
+    transition: width .3s;
+}
+.footer-left .contact:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.footer-centre{
+    padding-top: 10px;
+}
+.footer-centre h3{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 110px;
+    padding: 9px 48px 16px;
+    margin-left: 100px;
+    border-bottom: 1px dotted black;
+    border-right: 0;
+}
+.footer-centre li{
+    color: white;
+    display: block;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 10px 130px;
+}
+.footer-centre li a{
+    color: white;
+}
+.footer-centre .terms{
+    font-size: 18px;
+}
+.footer-centre .terms::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: cadetblue;
+    transition: width .3s;
+}
+.footer-centre .terms:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.footer-right{
+    float: right;
+    display: inline-block;
+    padding-top: 10px;
+}
+.footer-right p{
+    padding-top: 60px;
+    padding-left: 100px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-right .name{
+    padding-top: 10px;
+    padding-left: 148px;
+    color: greenyellow;
+    font-size: 17px;
+    font-weight: bold;
+}
+.footer-right .social{
+    padding-top: 15px;
+    padding-left: 145px;
+}
+
+.fa {
+    margin-top: 7px;
+    padding: 10px;
+    font-size: 30px;
+    width: 17px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: darkslateblue;
+    color: white;
+}
+.fa-linkedin {
+    background: #2867B2;
+    background: rgb(40,103,178);
+    color: white;
+}
+.fa-instagram {
+    margin-right: 10px;
+    margin-left: 10px;
+    background: #cb2027;
+    color: white;
+    background: radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 78%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.copy-right{
+    width: 100%;
+    height: 6vh;
+    background: darkblue;
+    color: #ec5518;
+    text-align: center;
+    font-size: medium;
+    padding-top: 15px;
+
+}
+
