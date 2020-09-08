@@ -7,7 +7,7 @@ session_start();
 <html>
 <head>
     <title>Create Your Resume</title>
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+<!--        <meta name="viewport" content="width-device-width, initial-scale=1.0">-->
         <link rel="stylesheet" href="../style/dashboard-style.css" >
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -30,7 +30,26 @@ session_start();
          <p>Personal Info</p>
          <a href="#" class="p-edit">Edit</a>
      </div>
-     <i class="far fa-user-circle" style="font-size: 100px"></i>
+     <div class="user-form">
+         <img class="user-profile" src="../image/userprofile.png">
+         <div class="name">
+             <span id="fname"></span>
+             <span id="lname"></span>
+         </div>
+         <div class="designation">
+             <span id="designation"></span><br><br>
+         </div>
+         <div class="number">
+             <i class="fas fa-phone"></i>
+             <span id="number"></span><br><br>
+             <i class="fas fa-envelope"></i>
+             <span id="email"></span><br><br>
+             <i class="fas fa-map-marker-alt"></i>
+             <span id="address"></span>
+
+         </div>
+
+     </div>
 
  </div>
 
@@ -43,7 +62,7 @@ session_start();
         <a href="career-summary.php" class="c-edit">Edit</a>
       </div>
       <div class="text-summary">
-        <p> </p>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
     </div>
 
@@ -79,6 +98,27 @@ session_start();
 
 </div>
 </div>
+    <script src="../js/dashboard.js"></script>
+    <script>
+        var fname = window.localStorage.getItem('fname');
+        var lname = window.localStorage.getItem('lname');
+        var designation = window.localStorage.getItem('designation');
+        var number = window.localStorage.getItem('number');
+        var email = window.localStorage.getItem('email');
+        var address = window.localStorage.getItem('address');
+
+        if (fname && lname && designation &&  number && email && address) {
+            document.getElementById('fname').innerText = fname;
+            document.getElementById('lname').innerText = lname;
+            document.getElementById('designation').innerText = designation;
+            document.getElementById('number').innerText = number;
+            document.getElementById('email').innerText = email;
+            document.getElementById('address').innerText = address;
+
+        }
+
+
+    </script>
 </body>
 </html>
 

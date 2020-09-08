@@ -39,6 +39,7 @@ li a{
     width: 100%;
     transition: width .3s
 }
+
 .img{
     width: 80px;
     height: 85px;
@@ -82,6 +83,10 @@ li a{
 .build{
     padding-top: 20px;
     padding-right: 250px;
+}
+.build li a:hover{
+    color: white;
+    background-color:darkturquoise;
 }
 
 /* footer section */

@@ -120,13 +120,13 @@ h3{
     border: 1px solid #964949fa;
     margin-bottom: 15px;
 }
-.form-right p{
+.right p{
     padding-left: 30px;
     font-size: 20px;
     font-weight: bold;
     color: #964949fa;
 }
-.form-right input{
+.right input{
     margin-left: 30px;
     width: 200px;
     height: 25px;
@@ -139,7 +139,7 @@ h3{
     border: 1px solid #964949fa;
     margin-bottom: 15px;
 }
-.blood{
+#blood,#marital-status{
     margin-left: 100px;
     width: 208px;
     height: 32px;
@@ -152,6 +152,7 @@ h3{
     border: 1px solid #964949fa;
     margin-bottom: 15px;
 }
+
 .gender{
     margin-left: 30px;
     width: 208px;
@@ -165,7 +166,7 @@ h3{
     border: 1px solid #964949fa;
     margin-bottom: 15px;
 }
-.form-bottom p{
+.bottom p{
     padding-top: 15px;
     padding-left: 100px;
     font-size: 20px;

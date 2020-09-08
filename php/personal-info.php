@@ -25,13 +25,13 @@
     <div class="left">
         <form class="form-left">
             <p>First Name</p>
-            <input type="text" placeholder="Enter your first name">
+            <input  id="fname" type="text" placeholder="Enter your first name" required>
 
             <p>Email</p>
-            <input type="email" placeholder="Enter your email address">
+            <input id="email" type="email" placeholder="Enter your email address" required>
 
             <p>Blood Group</p>
-            <select class="blood">
+            <select id="blood">
                 <option selected>A+</option>
                 <option>B+</option>
                 <option>O+</option>
@@ -43,25 +43,23 @@
             </select>
 
             <p>Marital Status</p>
-            <select class="blood">
+            <select id="marital-status">
                 <option selected>Married</option>
                 <option>Unmarried</option>
                 <option>Divorced</option>
             </select>
-        </form>
 
     </div>
 
     <div class="right">
-        <form class="form-right">
             <p>Last Name</p>
-            <input type="text" placeholder="Enter your last name">
+            <input id="lname" type="text" placeholder="Enter your last name" required>
 
             <p>Phone Number</p>
-            <input type="tel" placeholder="Enter your phone number">
+            <input id="number" type="tel" placeholder="Enter your phone number" required>
 
             <p>Date Of Birth</p>
-            <input type="date" placeholder="Enter your birth date">
+            <input id="birthdate" type="date" placeholder="Enter your birth date" required>
 
             <p>Gender</p>
             <select class="gender">
@@ -69,22 +67,27 @@
                 <option>Female</option>
                 <option>Other</option>
             </select>
-        </form>
+
     </div>
-    <form class="form-bottom">
+
+
+    <div class="bottom">
         <p>Present Address</p>
-        <textarea></textarea>
+        <textarea id="address" required></textarea>
 
         <p>Designation</p>
-        <input type="text" class="designation" placeholder="Enter your designation">
-    </form>
+        <input id="designation" type="text" class="designation" placeholder="Enter your designation" required>
+    </div>
+
 </div>
            <div class="save-continue">
-               <a href="dashboard.php" class="save">Save</a>
+               <button  onclick="check()" class="save">Save</button></a>
                <a href="career-summary.php" class="continue">Continue</a>
            </div>
+    </form>
 
  </div>
 
+<script src="../js/dashboard.js"></script>
 </body>
 </html>

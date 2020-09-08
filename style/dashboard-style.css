@@ -94,7 +94,7 @@ h2{
 .body-left{
     width: 350px;
     height: 580px;
-    background-color: white;
+    background-color: whitesmoke;
     margin-left: 135px;
     margin-top: 10px;
     float: left;
@@ -136,12 +136,36 @@ h2{
     height: 50px;
     border-radius: 5px 5px 0 0;
 }
-.fa-user-circle{
-    margin-top: 30px;
-    margin-left: 123px;
-    color: darkcyan;
+
+.user-profile{
+    height: 160px;
+    width: 180px;
+    padding-top: 10px;
 }
 
+
+.user-form{
+    text-align: center;
+    color: darkcyan;
+}
+.name{
+    padding-top: 25px;
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#designation{
+    font-size: 21px;
+    font-weight: bold;
+}
+.number{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight:bold;
+}
+#number,#email,#address{
+    padding: 5px;
+}
 .body-right{
     width:670px;
     height: 1000px;
@@ -151,6 +175,7 @@ h2{
     margin-right: 146px;
     margin-left: 20px;
     border-radius: 5px;
+
 }
 
     /* Career summary section */
@@ -195,6 +220,8 @@ h2{
 .text-summary{
     height: 100px;
     overflow-y: scroll;
+    /*min-height: 100px;*/
+    /*overflow: hidden;*/
 }
 .text-summary p{
     font-weight: normal;
