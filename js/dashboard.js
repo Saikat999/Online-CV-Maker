@@ -4,6 +4,8 @@ var formLeft = document.querySelector('.form-left');
 
 
 
+
+
 formLeft.addEventListener('submit',function (event) {
     event.preventDefault();
     var fname = document.getElementById('fname').value;
@@ -14,12 +16,14 @@ formLeft.addEventListener('submit',function (event) {
     var address = document.getElementById('address').value;
 
 
+
     window.localStorage.setItem('fname', fname);
     window.localStorage.setItem('lname', lname);
     window.localStorage.setItem('designation', designation);
     window.localStorage.setItem('number', number);
     window.localStorage.setItem('email', email);
     window.localStorage.setItem('address', address);
+
 
     //alert(window.localStorage.getItem('name'));
     // To remove
@@ -35,6 +39,7 @@ function check() {
     var address = document.getElementById('address').value;
     var birthdate = document.getElementById('birthdate').value;
 
+
     if ((fname && lname && designation &&  number && email && address && birthdate)===""){
         alert('Please enter all information properly');
         return false;
@@ -43,7 +48,7 @@ function check() {
     }
 
 
-        }
+}
 
 
 

@@ -81,8 +81,8 @@
 
 </div>
            <div class="save-continue">
-               <button  onclick="check()" class="save">Save</button></a>
-               <a href="career-summary.php" class="continue">Continue</a>
+               <button  onclick="check()" class="save">Save</button>
+               <button onclick="window.location.href='career-summary.php';" class="continue">Continue</button>
            </div>
     </form>
 
