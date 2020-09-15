@@ -67,18 +67,19 @@ session_start();
     </div>
 
     <div class="work-experience-part">
-      <div class="work-experience-header">
-        <i class="fas fa-th-list" style="font-size: 20px"></i>
-        <p>Work Experiences</p>
-        <a href="#" class="w-edit">Add</a>
-      </div>
-      <div class="work-details">
+        <div class="work-experience-header">
+           <i class="fas fa-th-list" style="font-size: 20px"></i>
+           <p>Work Experiences</p>
+           <a href="work-experience.php" class="w-edit">Add</a>
+        </div>
 
+        <div class="work-details">
           <div class="date-details">
             <div class="calender-logo">
                <i class="fas fa-calendar-alt" style="font-size: 20px"></i>
             </div>
-            <div class="d-date">
+              <div class="d-date">
+
                 <div class="start-from">
                     <span id="from"></span>
                 </div>
@@ -89,7 +90,7 @@ session_start();
                   <span id="to"></span>
                 </div>
 
-            </div>
+              </div>
           </div>
 
           <div class="company-details">
@@ -107,20 +108,51 @@ session_start();
 
       </div>
     </div>
-<!---->
-<!--    <div class="education-part">-->
-<!--       <div class="education-header">-->
-<!--        <i class="fas fa-graduation-cap" style="font-size: 20px"></i>-->
-<!--        <p>Educations</p>-->
-<!--        <a href="#" class="e-edit">Add</a>-->
-<!--       </div>-->
-<!--       <div class="education-details">-->
-<!--        <p></p>-->
-<!--        <i class="fas fa-calendar-alt" style="font-size: 20px"></i>-->
-<!--        <a href="#">  <i class="fas fa-edit" style="font-size: 20px"></i> </a>-->
-<!--        <a href="#"> <i class='fas fa-trash-alt' style='font-size:20px'></i> </a>-->
-<!--       </div>-->
-<!--    </div>-->
+
+    <div class="education-part">
+        <div class="education-header">
+            <i class="fas fa-graduation-cap" style="font-size: 20px"></i>
+            <p>Educations</p>
+            <a href="#" class="e-edit">Add</a>
+        </div>
+
+        <div class="education-details">
+            <div class="date-details">
+                <div class="calender-logo">
+                    <i class="fas fa-calendar-alt" style="font-size: 20px"></i>
+                </div>
+                <div class="d-date">
+
+                    <div class="start-from">
+                        <span id="from">20-10-2019</span>
+                    </div>
+                    <div class="to">
+                        <h4>To</h4>
+                    </div>
+                    <div class="end">
+                        <span id="to">10-12-2020</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="university-details">
+
+                <div class="university-position">
+                    <span id="versity">NorthSouth University</span><br>
+                    <span id="degree">BSc in CSE</span><br>
+                    <span id="grade">3.19</span>
+                </div>
+                <div class="edit-logo">
+                    <a href="#"><i class="fas fa-trash-alt" style='font-size:20px'></i></a>
+                    <a href="#"><i class="fas fa-edit" style='font-size:20px'></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
 
 </div>
 </div>
@@ -154,11 +186,13 @@ session_start();
             document.getElementById('summary').innerText=summary;
         }
         if(from && to && position && company){
-            document.getElementById('from').innerText = from;
-            document.getElementById('to').innerText = to;
-            document.getElementById('position').innerText = position;
-            document.getElementById('company').innerText = company;
+            document.getElementById('from').innerText += JSON.parse(localStorage.getItem('from'));
+            document.getElementById('to').innerText += JSON.parse(localStorage.getItem('to'));
+            document.getElementById('position').innerText += JSON.parse(localStorage.getItem('position'));
+            document.getElementById('company').innerText += JSON.parse(localStorage.getItem('company'));
         }
+        // var storedNames = JSON.parse(localStorage.getItem("from"));
+        // alert(storedNames);
 
 
 

@@ -25,7 +25,7 @@ session_start();
             <div class="total-exp">
 
                 <div class="date">
-                <input type="date" id="from" placeholder="from">
+                <input type="date" name="date" id="from" placeholder="from">
                 <h4>To</h4>
                 <input type="date" id="to" placeholder="to">
                 </div>
@@ -55,11 +55,62 @@ session_start();
           var position=document.getElementById('position').value;
           var company=document.getElementById('company').value;
 
+          if(localStorage.getItem('from')==null){
+              localStorage.setItem('from','[]');
+          }
+          if(localStorage.getItem('to')==null){
+              localStorage.setItem('to','[]');
+          }
+          if(localStorage.getItem('position')==null){
+              localStorage.setItem('position','[]');
+          }
+          if(localStorage.getItem('company')==null){
+              localStorage.setItem('company','[]');
+          }
 
-          window.localStorage.setItem('from',from);
-          window.localStorage.setItem('to',to);
-          window.localStorage.setItem('position',position);
-          window.localStorage.setItem('company',company);
+
+          var from_old=JSON.parse(localStorage.getItem('from'));
+          from_old.push(from);
+
+          var to_old=JSON.parse(localStorage.getItem('to'));
+          to_old.push(to);
+
+          var position_old=JSON.parse(localStorage.getItem('position'));
+          position_old.push(position);
+
+          var company_old=JSON.parse(localStorage.getItem('company'));
+          company_old.push(company);
+
+
+          localStorage.setItem('from',JSON.stringify(from_old));
+          localStorage.setItem('to',JSON.stringify(to_old));
+          localStorage.setItem('position',JSON.stringify(position_old));
+          localStorage.setItem('company',JSON.stringify(company_old));
+
+
+          // var storedNames;
+          // // var storedNames = JSON.parse(localStorage.getItem("from"));
+          // var storedNames = JSON.parse(localStorage["datas"]);
+          // if (storedNames === undefined || storedNames.length == 0) {
+          //     console.log('array empty');
+          //     var arr = [];
+          // }
+          // arr.push(from);
+          // // alert(arr);
+          //
+          // localStorage["datas"] = JSON.stringify(arr);
+          // // var test= localStorage.setItem("from", JSON.stringify(arr));
+          // var stored_datas = JSON.parse(localStorage["datas"]);
+          // // alert(typeof stored_datas);
+          // // alert( stored_datas);
+
+
+          // window.localStorage.setItem('from',from);
+          // window.localStorage.setItem('to',to);
+          // window.localStorage.setItem('position',position);
+          // window.localStorage.setItem('company',company);
+
+
 
       });
   </script>
